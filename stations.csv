@@ -1,233 +1,177 @@
 station,latitude,longitude
-Hauptbahnhof
-Bundestag
-Brandenburger Tor
-Unter den Linden
-Museumsinsel
-Rotes Rathaus
-Alexanderplatz
-Schillingstraße
-Strausberger Platz
-Weberwiese
-Frankfurter Tor
+Neu-Westend
+Senefelderplatz
+Heidelberger Platz
+Schwartzkopffstraße
+Westhafen
+Richard-Wagner-Platz
+Kaiserin-Augusta-Straße
+Spichernstraße
+Kaulsdorf-Nord
+Rathaus Schöneberg
+Rathaus Reinickendorf
+Hönow
+Tierpark
 Samariterstraße
+Kurfürstenstraße
+Südstern
+Mendelssohn-Bartholdy-Park
+Frankfurter Tor
+Zwickauer Damm
+Paulsternstraße
+Jungfernheide
+Wilmersdorfer Straße
+Hausvogteiplatz
+Theodor-Heuss-Platz
+Biesdorf-Süd
+Westphalweg
+Paracelsus-Bad
+Vinetastraße
+Bundesplatz
+Innsbrucker Platz
+Olympia-Stadion
 Frankfurter Allee
+Sophie-Charlotte-Platz
+Kurt-Schumacher-Platz
+Alexanderplatz
+Afrikanische Straße
+Seestraße
+Französische Straße
+Nauener Platz
+Bayerischer Platz
+Scharnweberstraße
+Strausberger Platz
+Oranienburger Tor
+Haselhorst
+Rudow
+Pankstraße
+Osloer Straße
+Parchimer Allee
+Augsburger Straße
+Krumme Lanke
+Anton-Wilhelm-Amo-Straße
+Warschauer Straße
+Tempelhof
+Friedrichsfelde
+Yorckstraße
+Prinzenstraße
+Breitenbachplatz
+Otisstraße
+Weberwiese
+Gneisenaustraße
+Ruhleben
+Grenzallee
+Deutsche Oper
+Klosterstraße
+Halemweg
+Rosenthaler Platz
+Wedding
+Voltastraße
+Reinickendorfer Straße
+Museumsinsel
+Zoologischer Garten
+Schillingstraße
+Spittelmarkt
+Bülowstraße
+Weinmeisterstraße
+Pankow
+Wittenau
+Heinrich-Heine-Straße
+Blissestraße
+Konstanzer Straße
+Hermannplatz
+Hansaplatz
+Platz der Luftbrücke
+Altstadt Spandau
+Oskar-Helene-Heim
+Franz-Neumann-Platz
+Rotes Rathaus
+Viktoria-Luise-Platz
+Kottbusser Tor
+Uhlandstraße
+Onkel Toms Hütte
+Neukölln
+Leopoldplatz
+Kaiserdamm
+Rohrdamm
+Cottbusser Platz
+Fehrbelliner Platz
+Berliner Straße
+Schönleinstraße
+Ullsteinstraße
+Blaschkoallee
+Paradestraße
+Siemensdamm
+Johannisthaler Chaussee
+Gleisdreieck
+Schloßstraße
+Hallesches Tor
+Potsdamer Platz
+Kochstraße
+Bernauer Straße
+Stadtmitte
+Turmstraße
+Güntzelstraße
+Leinestraße
+Lindauer Allee
+Alt-Mariendorf
+Holzhauser Straße
+Naturkundemuseum
+Moritzplatz
+Märkisches Museum
+Möckernbrücke
+Rehberge
+Nollendorfplatz
+Zitadelle
+Rathaus Steglitz
+Rosa-Luxemburg-Platz
+Wuhletal
 Magdalenenstraße
 Lichtenberg
-Friedrichsfelde
-Tierpark
-Biesdorf-Süd
-Elsterwerdaer Platz
-Wuhletal
-Kaulsdorf-Nord
-Kienberg
-Cottbusser Platz
-Hellersdorf
-Louis-Lewin-Straße
-Hönow
-Nollendorfplatz
-Viktoria-Luise-Platz
-Bayerischer Platz
-Rathaus Schöneberg
-Innsbrucker Platz
-Warschauer Straße
+Bundestag
+Wittenbergplatz
 Schlesisches Tor
-Görlitzer Bahnhof
-Kottbusser Tor
-Prinzenstraße
-Hallesches Tor
-Möckernbrücke
-Gleisdreieck
-Kurfürstenstraße
-Nollendorfplatz
-Wittenbergplatz
-Augsburger Straße
-Spichernstraße
-Hohenzollernplatz
-Fehrbelliner Platz
-Heidelberger Platz
-Rüdesheimer Platz
-Breitenbachplatz
-Podbielskiallee
-Dahlem-Dorf
-Freie Universität (Thielplatz)
-Oskar-Helene-Heim
-Onkel Toms Hütte
-Krumme Lanke
-
-Pankow
-Vinetastraße
-Schönhauser Allee
-Eberswalder Straße
-Senefelderplatz
-Rosa-Luxemburg-Platz
-Alexanderplatz
-Klosterstraße
-Märkisches Museum
-Spittelmarkt
-Hausvogteiplatz
-Stadtmitte
-Anton-Wilhelm-Amo-Straße
-Potsdamer Platz
-Mendelssohn-Bartholdy-Park
-Gleisdreieck
-Bülowstraße
-Nollendorfplatz
-Wittenbergplatz
-Zoologischer Garten
-Ernst-Reuter-Platz
-Deutsche Oper
-Richard-Wagner-Platz
-Bismarckstraße
-Sophie-Charlotte-Platz
-Kaiserdamm
-Theodor-Heuss-Platz
-Neu-Westend
-Olympia-Stadion
-Ruhleben
-
-----u2
-
-
-Warschauer Straße
-Oberbaum Bridge
-7.9Schlesisches Tor
-7.0Görlitzer Bahnhof
-6.3Kottbusser Tor
-5.4Prinzenstraße
-4.4Hallesches Tor
-3.9Möckernbrücke
-3.3Gleisdreieck
-2.2Kurfürstenstraße
-1.7Nollendorfplatz U4
-0Wittenbergplatz
-0.8Kurfürstendamm
-1.2Uhlandstraße
-
-
----
-
-Alt-Tegel
-Borsigwerke
-Holzhauser Straße
-Otisstraße
-Scharnweberstraße
-Kurt-Schumacher-Platz
-Afrikanische Straße
-Rehberge
-Seestraße
-Leopoldplatz
-Wedding
-Reinickendorfer Straße
-Schwartzkopffstraße
-Naturkundemuseum
-Oranienburger Tor
-Friedrichstraße
-Unter den Linden
-Französische Straße
-Stadtmitte
-Kochstraße
-Hallesches Tor
-Mehringdamm
-Platz der Luftbrücke
-Paradestraße
-Tempelhof
-Alt-Tempelhof
-Kaiserin-Augusta-Straße
-Ullsteinstraße
-Westphalweg
-Alt-Mariendorf
-
----u6
-
-Rathaus Spandau
-Altstadt Spandau
-Zitadelle
-Haselhorst
-Paulsternstraße
-Rohrdamm
-Siemensdamm
-Halemweg
-Jakob-Kaiser-Platz
-Jungfernheide
-Mierendorffplatz
-Richard-Wagner-Platz
-Bismarckstraße
-Wilmersdorfer Straße
-Adenauerplatz
-Konstanzer Straße
-Fehrbelliner Platz
-Blissestraße
-Berliner Straße
-Bayerischer Platz
-Eisenacher Straße
-Kleistpark
-Yorckstraße
-Möckernbrücke
-Mehringdamm
-Gneisenaustraße
-Südstern
-Hermannplatz
-Rathaus Neukölln
-Karl-Marx-Straße
-Neukölln
-Grenzallee
-Blaschkoallee
-Parchimer Allee
-Britz-Süd
-Johannisthaler Chaussee
 Lipschitzallee
-Wutzkyallee
-Zwickauer Damm
-Rudow
-
-
----u7
-
-Wittenau
-Rathaus Reinickendorf
-Karl-Bonhoeffer-Nervenklinik
-Lindauer Allee
-Paracelsus-Bad
-Residenzstraße
-Franz-Neumann-Platz
-Osloer Straße
-Pankstraße
 Gesundbrunnen
-Voltastraße
-Bernauer Straße
-Rosenthaler Platz
-Weinmeisterstraße
-Alexanderplatz
+Alt-Tegel
+Hohenzollernplatz
+Kienberg
 Jannowitzbrücke
-Heinrich-Heine-Straße
-Moritzplatz
-Kottbusser Tor
-Schönleinstraße
-Hermannplatz
-Boddinstraße
-Leinestraße
+Dahlem-Dorf
+Podbielskiallee
+Borsigwerke
+Hellersdorf
+Karl-Marx-Straße
+Kleistpark
 Hermannstraße
-
----u8
-
-Osloer Straße
-Nauener Platz
-Leopoldplatz
-Amrumer Straße
-Westhafen
 Birkenstraße
-Turmstraße
-Hansaplatz
-Zoologischer Garten
-Kurfürstendamm
-Spichernstraße
-Güntzelstraße
-Berliner Straße
-Bundesplatz
-Friedrich-Wilhelm-Platz
+Rüdesheimer Platz
+Mehringdamm
+Elsterwerdaer Platz
+Louis-Lewin-Straße
+Boddinstraße
+Amrumer Straße
+Residenzstraße
+Rathaus Spandau
+Jakob-Kaiser-Platz
+Ernst-Reuter-Platz
+Adenauerplatz
+Mierendorffplatz
+Britz-Süd
+Rathaus Neukölln
+Freie Universität (Thielplatz)
+Friedrichstraße
+Hauptbahnhof
+Unter den Linden
+Görlitzer Bahnhof
+Eisenacher Straße
+Alt-Tempelhof
 Walther-Schreiber-Platz
-Schloßstraße
-Rathaus Steglitz
-
----u9
+Bismarckstraße
+Kurfürstendamm
+Wutzkyallee
+Karl-Bonhoeffer-Nervenklinik
+Schönhauser Allee
+Friedrich-Wilhelm-Platz
+Eberswalder Straße
+Brandenburger Tor
