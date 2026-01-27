@@ -260,32 +260,62 @@ Karow,Buch,S2
 Buch,Röntgental,S2
 Röntgental,Zepernick,S2
 Zepernick,Bernau-Friedenstal,S2
-Bernau-Friedenstal,Bernau,S2Erkner,Wilhelmshagen,S3
+Bernau-Friedenstal,Bernau,S2
+Erkner,Wilhelmshagen,S3
 Wilhelmshagen,Rahnsdorf,S3
 Rahnsdorf,Friedrichshagen,S3
 Friedrichshagen,Hirschgarten,S3
-Hirschgarten,K�penick,S3
-K�penick,Wuhlheide,S3
+Hirschgarten,Köpenick,S3
+Köpenick,Wuhlheide,S3
 Wuhlheide,Karlshorst,S3
 Karlshorst,Rummelsburg Betriebsbahnhof,S3
 Rummelsburg Betriebsbahnhof,Rummelsburg,S3
 Rummelsburg,Ostkreuz,S3
-Ostkreuz,Warschauer Stra�e,S3
-Warschauer Stra�e,Ostbahnhof,S3
-Ostbahnhof,Jannowitzbr�cke,S3
-Jannowitzbr�cke,Alexanderplatz,S3
+Ostkreuz,Warschauer Straße,S3
+Warschauer Straße,Ostbahnhof,S3
+Ostbahnhof,Jannowitzbrücke,S3
+Jannowitzbrücke,Alexanderplatz,S3
 Alexanderplatz,Hackescher Markt,S3
-Hackescher Markt,Friedrichstra�e,S3
-Friedrichstra�e,Hauptbahnhof,S3
+Hackescher Markt,Friedrichstraße,S3
+Friedrichstraße,Hauptbahnhof,S3
 Hauptbahnhof,Bellevue,S3
 Bellevue,Tiergarten,S3
 Tiergarten,Zoologischer Garten,S3
 Zoologischer Garten,Savignyplatz,S3
 Savignyplatz,Charlottenburg,S3
 Charlottenburg,Westkreuz,S3
-Westkreuz,Messe S�d,S3
-Messe S�d,Heerstra�e,S3
-Heerstra�e,Olympiastadion,S3
+Westkreuz,Messe Süd,S3
+Messe Süd,Heerstraße,S3
+Heerstraße,Olympiastadion,S3
 Olympiastadion,Pichelsberg,S3
 Pichelsberg,Stresow,S3
 Stresow,Spandau,S3
+Strausberg Nord,Strausberg Stadt,S5
+Strausberg Stadt,Hegermühle,S5
+Hegermühle,Strausberg,S5
+Strausberg,Petershagen Nord,S5
+Petershagen Nord,Fredersdorf,S5
+Fredersdorf,Neuenhagen,S5
+Neuenhagen,Hoppegarten,S5
+Hoppegarten,Birkenstein,S5
+Birkenstein,Mahlsdorf,S5
+Mahlsdorf,Kaulsdorf,S5
+Kaulsdorf,Wuhletal,S5
+Wuhletal,Biesdorf,S5
+Biesdorf,Friedrichsfelde Ost,S5
+Friedrichsfelde Ost,Lichtenberg,S5
+Lichtenberg,Nöldnerplatz,S5
+Nöldnerplatz,Ostkreuz,S5
+Ostkreuz,Warschauer Straße,S5
+Warschauer Straße,Ostbahnhof,S5
+Ostbahnhof,Jannowitzbrücke,S5
+Jannowitzbrücke,Alexanderplatz,S5
+Alexanderplatz,Hackescher Markt,S5
+Hackescher Markt,Friedrichstraße,S5
+Friedrichstraße,Hauptbahnhof,S5
+Hauptbahnhof,Bellevue,S5
+Bellevue,Tiergarten,S5
+Tiergarten,Zoologischer Garten,S5
+Zoologischer Garten,Savignyplatz,S5
+Savignyplatz,Charlottenburg,S5
+Charlottenburg,Westkreuz,S5

@@ -8,6 +8,6 @@ def displayConnections(stations, route, delimiter="\n"):
 
 def updateConnections(stations, route, filename, delimiter="\n"):
     text = displayConnections(stations, route, delimiter=delimiter)
-    with open(filename, "a") as routefile:
+    with open(filename, "a", encoding="utf-8") as routefile:
         routefile.write(text)
     return "Success"
