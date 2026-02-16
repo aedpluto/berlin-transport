@@ -1,5 +1,16 @@
 # berlin-transport
 
-This project seeks to map the Berlin transport network, showing how the U-Bahn, S-Bahn, and Strassenbahn routes have developed over time.
+This project analyses the Berlin transport network. It asks questions such as how accessible is the network to the elderly and how has the network changed over time?
 
-Network maps are illustrated through a Jupyter Noteboook.
+
+
+Currently, the project only uses U-Bahn and S-Bahn data, although Strassenbahn and bus routes will be added at a later date.
+
+
+
+A technical analysis can be found in the Jupyter Notebook python-analysis/mapping-berlin.ipynb (which will soon be accompanied by a written report).
+
+
+
+The project has also been deployed as a GitHub Pages website which can be accessed here: https://aedpluto.github.io/berlin-transport/
+
