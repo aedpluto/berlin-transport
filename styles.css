@@ -1,8 +1,10 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 h1 {
     font-family: verdana;
     text-align: center;
     margin-top: 0; 
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 p {
@@ -35,9 +37,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top:0%;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
   width: 80%;
 }
 
