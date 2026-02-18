@@ -2,20 +2,26 @@
 <html>
     <head>
         <title>Berlin Transport Network</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     </head>
 
     <body>
         <div class="body-centre">
             <h1>The Berlin Transport Network</h1>
-            <iframe src="map.html" width="75%" height="500px" style="border:none;"></iframe>
+            <p style="text-align: center;">This page is still in development.</p>
+            <iframe src="{{ map_url }}" width="75%" height="500px" style="border:none;"></iframe><br>
             
             <p>This is a contemporary map of Berlin's transport network. Feel free to zoom in to the different regions to get a closer view. You can also type the name of one station in the box below to isolate each of the transport lines.</p>
-            <form>
-                <label for="station-name">Select a transport line:</label>
-                <input type="text" id="station-name" name="station-name"><br>
+            <form action="/process" method="POST">
+                <label for="station-name-input">Select a transport line:</label>
+                <input type="text" id="station-name" name="station-name-input" placeholder="e.g. U3">
+                <button>Show</button><br>
             </form>
             
+            {% if error %}
+                <p style="color: red; font-weight: bold;">{{ error }}</p>
+            {% endif %}
+
             <p>Below is a list of interesting questions that have been analysed with this map.</p>
             <ul>
                 <li>Question 1: Are the elderly less likely to have access to transport in Berlin?</li>

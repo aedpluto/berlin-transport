@@ -14,3 +14,7 @@ A technical analysis can be found in the Jupyter Notebook python-analysis/mappin
 
 The project has also been deployed as a GitHub Pages website which can be accessed here: https://aedpluto.github.io/berlin-transport/
 
+
+
+Demographic data was taken from the Amt für Statistik Berlin-Brandenburg: https://www.statistik-berlin-brandenburg.de/
+
