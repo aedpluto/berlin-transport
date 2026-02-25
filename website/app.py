@@ -101,7 +101,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    map_path = os.path.join(static_dir, "map.html")
+    map_path = url_for("static", filename="map.html")
     return render_template("index.html", map_url=map_path)
 
 @app.route("/process", methods=["POST"])
@@ -111,7 +111,7 @@ def process():
 
     # protect against harmful input
     if not line.isalnum():
-        map_path = os.path.join(static_dir, "map.html")
+        map_path = url_for("static", filename="map.html")
         return render_template("index.html", error="Invalid input", map_url=map_path)
 
     # the S41 has bee excluded from the dataset because it has the same stations and routes as the S42
@@ -124,7 +124,7 @@ def process():
     allBerlinStations = list(stations.station.unique())
 
     if line.upper() == "ALL":
-        map_path = os.path.join(static_dir, "map.html")
+        map_path = url_for("static", filename="map.html")
         return render_template("index.html", map_url=map_path)
     
     elif line in allBerlinStations:
@@ -154,7 +154,7 @@ def process():
         return render_template("index.html", map_url=generated_map_url)
 
     else:
-        map_path = os.path.join(static_dir, "map.html")
+        map_path = url_for("static", filename="map.html")
         return render_template("index.html", error="That is not a Berlin train line.", map_url=map_path)
 
 
