@@ -155,7 +155,7 @@ def process():
 
     else:
         map_path = url_for("static", filename="map.html")
-        return render_template("index.html", error="That is not a Berlin train line.", map_url=map_path)
+        return render_template("index.html", error="That is not a Berlin train line or station.", map_url=map_path)
 
 
 if __name__ == "__main__":

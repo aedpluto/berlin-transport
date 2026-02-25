@@ -5,6 +5,11 @@ h1 {
     padding-top: 20px;
 }
 
+h2 {
+    font-family: verdana;
+    text-align: left;
+}
+
 p {
     font-family: verdana;
     text-align: left;
@@ -15,6 +20,11 @@ ul {
     font-family: verdana;
     text-align: left;
     font-size: 16px;
+}
+
+li {
+    font-family: verdana;
+    color: darkslategrey;
 }
 
 label {
