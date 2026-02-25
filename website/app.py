@@ -7,10 +7,16 @@ import io
 import pandas as pd
 import numpy as np
 
+# find current directory for app.py
+base_dir = os.path.dirname(os.path.abspath(__file__))
+stations_path = os.path.join(base_dir, "..", "data", "stations.csv")
+routes_path = os.path.join(base_dir, "..", "data", "routes.csv")
+lineColours_path = os.path.join(base_dir, "..", "data", "routeColours.csv")
+
 # get network data
-stations = pd.read_csv("../data/stations.csv")
-routes = pd.read_csv("../data/routes.csv")
-lineColours = pd.read_csv("../data/routeColours.csv")
+stations = pd.read_csv(stations_path)
+routes = pd.read_csv(routes_path)
+lineColours = pd.read_csv(lineColours_path)
 
 # plot points on map representing each station
 def plotStations(map, stations, routes):
