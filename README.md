@@ -20,5 +20,7 @@ An older static version of the website is accessible on GitHub Pages: https://ae
 
 
 
-Demographic data was taken from the Amt für Statistik Berlin-Brandenburg (https://www.statistik-berlin-brandenburg.de/) as well as from Geodatensuche Berlin (https://gdi.berlin.de/geonetwork/srv/eng/catalog.search#/metadata/5e05b70b-50d6-4164-b0fd-9cdef4e43559).
+Demographic data was taken from the Amt für Statistik Berlin-Brandenburg,:
 
+1. https://www.statistik-berlin-brandenburg.de/
+2. https://gdi.berlin.de/geonetwork/srv/eng/catalog.search#/metadata/5e05b70b-50d6-4164-b0fd-9cdef4e43559

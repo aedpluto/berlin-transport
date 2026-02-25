@@ -9,6 +9,8 @@ import numpy as np
 
 # find current directory for app.py
 base_dir = os.path.dirname(os.path.abspath(__file__))
+static_dir = os.path.join(base_dir, "static")
+
 stations_path = os.path.join(base_dir, "..", "data", "stations.csv")
 routes_path = os.path.join(base_dir, "..", "data", "routes.csv")
 lineColours_path = os.path.join(base_dir, "..", "data", "routeColours.csv")
@@ -99,7 +101,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html", map_url="static/map.html")
+    map_path = os.path.join(static_dir, "map.html")
+    return render_template("index.html", map_url=map_path)
 
 @app.route("/process", methods=["POST"])
 def process():
@@ -108,7 +111,8 @@ def process():
 
     # protect against harmful input
     if not line.isalnum():
-        return render_template("index.html", error="Invalid input", map_url="static/map.html")
+        map_path = os.path.join(static_dir, "map.html")
+        return render_template("index.html", error="Invalid input", map_url=map_path)
 
     # the S41 has bee excluded from the dataset because it has the same stations and routes as the S42
     allBerlinLines = list(routes.linie.unique())
@@ -120,7 +124,8 @@ def process():
     allBerlinStations = list(stations.station.unique())
 
     if line.upper() == "ALL":
-        return render_template("index.html", map_url="static/map.html")
+        map_path = os.path.join(static_dir, "map.html")
+        return render_template("index.html", map_url=map_path)
     
     elif line in allBerlinStations:
         # generate new map
@@ -128,7 +133,8 @@ def process():
         subS, subR = extractAllLinesAroundStation(stations, routes, line)
         plotStations(m_sub, subS, subR)
         plotTrainConnections(m_sub, subS, subR)
-        m_sub.save("static/map-subset.html")
+        map_path = os.path.join(static_dir, "map-subset.html")
+        m_sub.save(map_path)
 
         # render page with new map
         generated_map_url = url_for('static', filename='map-subset.html')
@@ -140,14 +146,16 @@ def process():
         subS, subR = extractTrainline(stations, routes, line.upper())
         plotStations(m_sub, subS, subR)
         plotTrainConnections(m_sub, subS, subR)
-        m_sub.save("static/map-subset.html")
+        map_path = os.path.join(static_dir, "map-subset.html")
+        m_sub.save(map_path)
 
         # render page with new map
         generated_map_url = url_for('static', filename='map-subset.html')
         return render_template("index.html", map_url=generated_map_url)
 
     else:
-        return render_template("index.html", error="That is not a Berlin train line.", map_url="static/map.html")
+        map_path = os.path.join(static_dir, "map.html")
+        return render_template("index.html", error="That is not a Berlin train line.", map_url=map_path)
 
 
 if __name__ == "__main__":
