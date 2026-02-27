@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="EWR-Basisdaten-LOR-20241231-1-1--PLR_Absolut">
+        <SrcDataSource relativeToVRT="1">EWR-Basisdaten-LOR-20241231-1-1-.xlsx</SrcDataSource>
+        <!--Header=False-->
+        <SrcSql dialect="sqlite">SELECT * FROM 'PLR_Absolut' LIMIT 549 OFFSET 5</SrcSql>
+        <Field name="RAUMID" src="Field1" type="String"/>
+        <Field name="Insgesamt" src="Field2" type="Integer"/>
+        <Field name="Einw m" src="Field3" type="Integer"/>
+        <Field name="Einw w" src="Field4" type="Integer"/>
+        <Field name="u15" src="Field5" type="Integer"/>
+        <Field name="15u45" src="Field6" type="Integer"/>
+        <Field name="45u65" src="Field7" type="Integer"/>
+        <Field name="65+" src="Field8" type="Integer"/>
+        <Field name="Durchschnittsalter" src="Field9" type="Real"/>
+        <Field name="Deutsche" src="Field10" type="Integer"/>
+        <Field name="Ausländer" src="Field11" type="Integer"/>
+        <Field name="Einwohner ohne Migra" src="Field12" type="Integer"/>
+        <Field name="Einwohner mit Migra" src="Field13" type="Integer"/>
+        <Field name="darunter Deutsche mit Migra" src="Field14" type="Integer"/>
+        <Field name="ledig" src="Field15" type="Integer"/>
+        <Field name="verheiratet" src="Field16" type="Integer"/>
+        <Field name="verwitwet" src="Field17" type="Integer"/>
+        <Field name="geschieden" src="Field18" type="Integer"/>
+        <Field name="Lebenspartnerschaft" src="Field19" type="Integer"/>
+        <Field name="Evangelisch" src="Field20" type="Integer"/>
+        <Field name="Katholisch" src="Field21" type="Integer"/>
+        <Field name="SonstigeKeine" src="Field22" type="Integer"/>
+        <Field name="einfache Wohnlage" src="Field23" type="Integer"/>
+        <Field name="mittlere Wohnlage" src="Field24" type="Integer"/>
+        <Field name="gute Wohnlage" src="Field25" type="Integer"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>

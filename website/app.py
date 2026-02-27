@@ -96,6 +96,26 @@ def extractAllLinesAroundStation(stations, routes, stationName):
     
     return stationsSubsetAll, trainLineSubsetAll
 
+def capitalise(mystring):
+    newstring = ""
+    previousletter = ""
+    for i in mystring.lower():
+        if (previousletter == "") or (previousletter == " "):
+            newstring = newstring + i.upper()
+        else:
+            newstring = newstring + i
+        previousletter = i
+    return newstring
+
+def specialisedUpper(mystring):
+    newstring = ""
+    for i in mystring:
+        if i == "ß":
+            newstring = newstring + "ß"
+        else:
+            newstring = newstring + i.upper()
+    return newstring
+
 ### WEB APPLICATION ###
 app = Flask(__name__)
 
@@ -107,7 +127,7 @@ def index():
 @app.route("/process", methods=["POST"])
 def process():
     # get input from HTML
-    line = request.form["station-name-input"].strip()
+    line = specialisedUpper(request.form["station-name-input"].strip())
 
     # protect against harmful input
     if not line.isalnum():
@@ -121,16 +141,16 @@ def process():
         line = "S42"
     
     # if input is a station name it's handeled here
-    allBerlinStations = list(stations.station.unique())
+    allBerlinStations = list(stations.station.apply(lambda x: specialisedUpper(x)).unique())
 
-    if line.upper() == "ALL":
+    if line == "ALL":
         map_path = url_for("static", filename="map.html")
         return render_template("index.html", map_url=map_path)
     
     elif line in allBerlinStations:
         # generate new map
         m_sub = folium.Map(tiles="cartodb positron", location=(52.52, 13.40), zoom_start=10)
-        subS, subR = extractAllLinesAroundStation(stations, routes, line)
+        subS, subR = extractAllLinesAroundStation(stations, routes, capitalise(line))
         plotStations(m_sub, subS, subR)
         plotTrainConnections(m_sub, subS, subR)
         map_path = os.path.join(static_dir, "map-subset.html")
@@ -140,10 +160,10 @@ def process():
         generated_map_url = url_for('static', filename='map-subset.html')
         return render_template("index.html", map_url=generated_map_url)
     
-    elif line.upper() in allBerlinLines:
+    elif line in allBerlinLines:
         # generate new map
         m_sub = folium.Map(tiles="cartodb positron", location=(52.52, 13.40), zoom_start=10)
-        subS, subR = extractTrainline(stations, routes, line.upper())
+        subS, subR = extractTrainline(stations, routes, line)
         plotStations(m_sub, subS, subR)
         plotTrainConnections(m_sub, subS, subR)
         map_path = os.path.join(static_dir, "map-subset.html")
