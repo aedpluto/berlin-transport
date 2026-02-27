@@ -116,6 +116,14 @@ def specialisedUpper(mystring):
             newstring = newstring + i.upper()
     return newstring
 
+def isalphanumeric(mystring):
+    for i in mystring:
+        if i.isalnum() or i.isspace():
+            pass
+        else:
+            return False
+    return True
+
 ### WEB APPLICATION ###
 app = Flask(__name__)
 
@@ -130,14 +138,14 @@ def process():
     line = specialisedUpper(request.form["station-name-input"].strip())
 
     # protect against harmful input
-    if not line.isalnum():
+    if not isalphanumeric(line):
         map_path = url_for("static", filename="map.html")
         return render_template("index.html", error="Invalid input", map_url=map_path)
 
     # the S41 has bee excluded from the dataset because it has the same stations and routes as the S42
     allBerlinLines = list(routes.linie.unique())
     allBerlinLines.append("S41")
-    if line.upper() == "S41":
+    if line == "S41":
         line = "S42"
     
     # if input is a station name it's handeled here
