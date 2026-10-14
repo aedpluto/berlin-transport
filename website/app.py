@@ -7,6 +7,10 @@ import io
 import pandas as pd
 import numpy as np
 
+# api key
+apiKey = "cb1_4kxa_1_63e9d974c640740b40841532"
+cartoURL = f"https://basemaps.cartocdn.com/rastertiles/light_all/{{z}}/{{x}}/{{y}}.png?key={apiKey}"
+
 # find current directory for app.py
 base_dir = os.path.dirname(os.path.abspath(__file__))
 static_dir = os.path.join(base_dir, "static")
@@ -157,7 +161,10 @@ def process():
     
     elif line in allBerlinStations:
         # generate new map
-        m_sub = folium.Map(tiles="cartodb positron", location=(52.52, 13.40), zoom_start=10)
+        m_sub = folium.Map(tiles=cartoURL,
+                           attr='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                           location=(52.52, 13.40), 
+                           zoom_start=10)
         subS, subR = extractAllLinesAroundStation(stations, routes, capitalise(line))
         plotStations(m_sub, subS, subR)
         plotTrainConnections(m_sub, subS, subR)
@@ -170,7 +177,10 @@ def process():
     
     elif line in allBerlinLines:
         # generate new map
-        m_sub = folium.Map(tiles="cartodb positron", location=(52.52, 13.40), zoom_start=10)
+        m_sub = folium.Map(tiles=cartoURL,
+                                   attr='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                                   location=(52.52, 13.40), 
+                                   zoom_start=10)
         subS, subR = extractTrainline(stations, routes, line)
         plotStations(m_sub, subS, subR)
         plotTrainConnections(m_sub, subS, subR)
