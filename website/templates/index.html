@@ -11,7 +11,7 @@
             <p style="text-align: center;">This page is still in development.</p>
             <iframe src="{{ map_url }}" width="75%" height="500px" style="border:none;"></iframe><br>
             
-            <p>This is a contemporary map of Berlin's transport network. Feel free to zoom in to the different regions to get a closer view. You can also type the name of a line or station into the box below to isolate the relevant transport lines.</p>
+            <p>This is a contemporary map of Berlin's transport network. Feel free to zoom in to the different regions to get a closer view. You can also type the name of a line or station into the box below to isolate the relevant information.</p>
             <form action="/process" method="POST">
                 <label for="station-name-input">Select a transport line or station name:</label>
                 <input type="text" id="station-name" name="station-name-input" placeholder="e.g. U3">
@@ -22,23 +22,6 @@
                 <p style="color: red; font-weight: bold;">{{ error }}</p>
             {% endif %}
 
-            <p>Below is a list of interesting questions that have been analysed with this map.</p>
-            <ul>
-                <li><a href="#question1">Question 1: Are the elderly less likely to have access to transport in Berlin?</a></li>
-                <li><a href="#question2">Question 2: Are ethnic minorities less likely to have close access to public transport in Berlin?</a></li>
-                <li><a href="#question3">Question 3: Which stations and which lines are subject to the most delays?</a></li>
-                <li><a href="#question4">Question 4: How has Berlin's transport network changed over time?</a></li>
-            </ul>
-
-            <h2 id="question1">Question 1</h2>
-            <img src="{{ url_for('static', filename='images/ages-map.png') }}" alt="Chloropleth map showing average age across Berlin." style="width: 40%; height: auto;">
-            <p>This is a map showing the average age of residents in Berlin. We can see that the outskirts of the city tend to have an older average age than the city centre.</p>
-            <h2 id="question2">Question 2</h2>
-            <p>The analysis relating to this question will be available shortly.</p>
-            <h2 id="question3">Question 3</h2>
-            <p>The analysis relating to this question will be available shortly.</p>
-            <h2 id="question4">Question 4</h2>
-            <p>The analysis relating to this question will be available shortly.</p>
         </div>
     </body>
 
